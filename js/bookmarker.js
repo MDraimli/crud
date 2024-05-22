@@ -19,7 +19,7 @@ submitBtn.addEventListener("click", function () {
     if (bookmarkName.classList.contains("is-valid") && bookmarkURL.classList.contains("is-valid")) {
         var bookmark = {
             name: bookmarkName.value,
-            url: bookmarkURL.value
+            url: bookmarkURL.value 
         }
         bookmarks.push(bookmark);
         localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
